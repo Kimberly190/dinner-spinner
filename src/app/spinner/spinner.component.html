@@ -1,0 +1,8 @@
+<div class="spinner" [ngClass]="styleClass">
+  <button (click)="spinLeft()">&lt;&lt;</button>
+  <button (click)="tickLeft()">&lt;</button>
+  <!-- <span style="display:none;" *ngFor="let item of items">{{ item }}</span> -->
+  <span>{{ currentItem }}</span>
+  <button (click)="tickRight()">&gt;</button>
+  <button (click)="spinRight()">&gt;&gt;</button>
+</div>

@@ -1,0 +1,95 @@
+{
+	"mains": {
+		"beef": [
+			"roast beef",
+			"steak",
+			"cubed steak",
+			"hamburgers",
+			"beef tacos",
+			"beef meatloaf",
+			"philly steak sandwiches",
+			"steak shish kebab",
+      "pepper steak"
+		],
+		"chicken": [
+			"bbq chicken",
+			"lemon chicken",
+			"rotisserie chicken",
+			"fried chicken thighs",
+			"chicken alfredo",
+			"chicken strips",
+			"chicken stir-fry",
+			"chicken shish kebab",
+      "chicken poke bowls"
+		],
+		"pork": [
+			"pork chops",
+			"pork tenderloin",
+      "bbq pork ribs",
+			"baked ham",
+      "bratwurst"
+		],
+		"fish": [
+			"baked tilapia",
+			"baked salmon",
+			"crab cakes",
+			"shrimp stir-fry"
+		],
+		"other": [
+			"spaghetti & meatballs",
+			"pizza",
+			"ravioli",
+			"summer sausage",
+			"sausage & pasta bake",
+			"stuffed peppers",
+			"turkey burgers",
+			"turkey meatloaf"
+		]
+	},
+	"vegetables": {
+		"all": [
+			"tossed salad",
+			"caprese salad",
+			"sliced cucumber",
+			"steamed broccoli",
+			"steamed carrots",
+			"sauteed zucchini",
+			"sauteed yellow squash",
+			"zucchini medley",
+			"green beans",
+			"corn on the cob",
+			"cabbage with bacon",
+			"green bean salad",
+			"butternut squash casserole",
+			"fried zucchini",
+			"sauteed veg with panko",
+			"steamed frozen vegetable",
+			"roasted veg medley",
+      "raw veggies and dip",
+      "asparagus"
+		]
+	},
+	"starches": {
+		"potato": [
+			"baked potato",
+			"mashed potatoes",
+			"sweet potato",
+			"sweet potato casserole",
+			"french fries",
+			"skillet potatoes"
+		],
+		"pantry": [
+			"flavored rice",
+			"plain rice",
+			"quinoa rice blend",
+			"long grain & wild rice",
+			"flavored noodles"
+		],
+		"bread": [
+			"garlic bread",
+			"bread & butter",
+			"biscuits",
+			"dumplings"
+		]
+	}
+}

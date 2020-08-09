@@ -1,0 +1,13 @@
+<div id="dinner-spinner">
+  <!-- TODO ask on S/O why I have to bind the items once before anything shows up -->
+  <h2 style="display:none;">Dummy</h2>
+  <app-spinner style="display:none;" name="dummy" [items]=selectedMains styleClass="bgWarm"></app-spinner>
+  <h2>Main</h2>
+  <app-spinner #main_spinner name="main" [items]=selectedMains styleClass="bgWarm"></app-spinner>
+  <h2>Starch</h2>
+  <app-spinner #starch_spinner name="starch" [items]=selectedStarches styleClass="bgNeutral"></app-spinner>
+  <h2>Vegetable</h2>
+  <app-spinner #veg_spinner name="vegetable" [items]=vegetables styleClass="bgCool"></app-spinner>
+  <div>&nbsp;</div>
+  <button class="button" (click)="randomize()">Random!</button>
+</div>

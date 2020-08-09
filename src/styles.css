@@ -1,0 +1,75 @@
+/* Add application styles & imports to this file! */
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+  text-align: center;
+  max-width: 700px;
+  padding: .5rem;
+  margin: auto;
+}
+
+h2 {
+  margin: 1rem .5rem;
+}
+
+@media (max-width: 550px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+#dinner-spinner {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+}
+
+.spinner {
+  display: grid;
+  grid-template-columns: 2rem 2rem auto 2rem 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.spinner button {
+  background-color: inherit;
+  padding: 1em .5em;
+}
+
+.bgWarm {
+  background-color: lightpink;
+  background: linear-gradient(90deg, lightpink, #ffe9ec, lightpink);
+}
+
+.bgNeutral {
+  background-color: linen;
+  background: linear-gradient(90deg, linen, white, linen);
+}
+
+.bgCool {
+  background-color: aqua;
+  background: linear-gradient(90deg, aqua, #caffff, aqua);
+}
+
+.button {
+  font-size: 18px;
+  padding: .75em;
+  margin: .5em 2em;
+  background: linear-gradient(90deg, lightpink, linen, aqua);
+}
+
+/* lighten on hover, whatever color it is */
+button:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.5);
+}
+
+fieldset {
+  padding: 5px 2px;
+  margin: 0 10px;
+}
+
+label {
+  margin-right: 7px;
+}
