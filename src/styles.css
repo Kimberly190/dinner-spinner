@@ -3,6 +3,12 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+:root {
+  --theme-color-warm: rgb(240, 168, 140);
+  --theme-color-cool: rgb(111, 218, 185);
+  --theme-color-neutral: rgb(235, 226, 217);
+}
+
 main {
   text-align: center;
   max-width: 700px;
@@ -39,25 +45,25 @@ h2 {
 }
 
 .bgWarm {
-  background-color: lightpink;
-  background: linear-gradient(90deg, lightpink, #ffe9ec, lightpink);
+  background-color: var(--theme-color-warm, lightpink);
+  background: linear-gradient(90deg, var(--theme-color-warm, lightpink), #ffe9ec, var(--theme-color-warm, lightpink));
 }
 
 .bgNeutral {
-  background-color: linen;
-  background: linear-gradient(90deg, linen, white, linen);
+  background-color: var(--theme-color-neutral, linen);
+  background: linear-gradient(90deg, var(--theme-color-neutral, linen), white, var(--theme-color-neutral, linen));
 }
 
 .bgCool {
-  background-color: aqua;
-  background: linear-gradient(90deg, aqua, #caffff, aqua);
+  background-color: var(--theme-color-cool, aqua);
+  background: linear-gradient(90deg, var(--theme-color-cool, aqua), #caffff, var(--theme-color-cool, aqua));
 }
 
 .button {
   font-size: 18px;
   padding: .75em;
   margin: .5em 2em;
-  background: linear-gradient(90deg, lightpink, linen, aqua);
+  background: linear-gradient(90deg, var(--theme-color-warm, lightpink), var(--theme-color-neutral, linen), var(--theme-color-cool, aqua));
 }
 
 /* lighten on hover, whatever color it is */

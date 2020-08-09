@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewChild, ElementRef } from '@angular/core';
 
 import { FoodService } from '../food.service';
 
-import { ViewChild } from '@angular/core';
 import { SpinnerComponent } from '../spinner/spinner.component';
 
 @Component({
@@ -29,6 +29,7 @@ export class DinnerSpinnerComponent implements OnInit {
         // console.log("got food data:");
         // console.log(data);
         this.foods = data;
+
         this.mains = this.foods.mains;
         this.selectedMains = this.mains.beef.concat(this.mains.chicken).concat(this.mains.pork).concat(this.mains.fish).concat(this.mains.other);
 
@@ -54,5 +55,60 @@ export class DinnerSpinnerComponent implements OnInit {
     this.mainChild.spinRight();
     this.starchChild.spinRight();
     this.vegChild.spinRight();
+  }
+
+    //TODO: angularize this...
+  @ViewChild('beef')
+  private beefCheckbox: ElementRef;
+  @ViewChild('chicken')
+  private chickenCheckbox: ElementRef;
+  @ViewChild('pork')
+  private porkCheckbox: ElementRef;
+  @ViewChild('fish')
+  private fishCheckbox: ElementRef;
+  @ViewChild('other')
+  private otherCheckbox: ElementRef;
+
+  onMainChanged() {
+      let newMains = [];
+      if (this.beefCheckbox.nativeElement.checked) {
+        newMains = newMains.concat(this.mains.beef);
+      }
+      if (this.chickenCheckbox.nativeElement.checked) {
+        newMains = newMains.concat(this.mains.chicken);
+      }
+      if (this.porkCheckbox.nativeElement.checked) {
+        newMains = newMains.concat(this.mains.pork);
+      }
+      if (this.fishCheckbox.nativeElement.checked) {
+        newMains = newMains.concat(this.mains.fish);
+      }
+      if (this.otherCheckbox.nativeElement.checked) {
+        newMains = newMains.concat(this.mains.other);
+      }
+
+      this.selectedMains = newMains;
+  }
+
+  @ViewChild('potato')
+  private potatoCheckbox: ElementRef;
+  @ViewChild('pantry')
+  private pantryCheckbox: ElementRef;
+  @ViewChild('bread')
+  private breadCheckbox: ElementRef;
+
+  onStarchChanged() {
+      let newStarches = [];
+      if (this.potatoCheckbox.nativeElement.checked) {
+        newStarches = newStarches.concat(this.starches.potato);
+      }
+      if (this.pantryCheckbox.nativeElement.checked) {
+        newStarches = newStarches.concat(this.starches.pantry);
+      }
+      if (this.breadCheckbox.nativeElement.checked) {
+        newStarches = newStarches.concat(this.starches.bread);
+      }
+
+      this.selectedStarches = newStarches;
   }
 }

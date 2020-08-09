@@ -21,6 +21,7 @@ export class SpinnerComponent implements OnInit {
     return this.items[this.currentIndex];
   }
 
+  //TODO: add CSS animation for spinLeft
   spinLeft() {
     let ticks = Math.random() * this.items.length + 1;
     while (ticks > 0) {
@@ -29,6 +30,7 @@ export class SpinnerComponent implements OnInit {
     }
   }
 
+  //TODO: add CSS animation for spinRight
   spinRight() {
     let ticks = Math.random() * this.items.length + 1;
     while (ticks > 0) {

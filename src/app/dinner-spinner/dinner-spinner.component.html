@@ -11,3 +11,19 @@
   <div>&nbsp;</div>
   <button class="button" (click)="randomize()">Random!</button>
 </div>
+<form>
+  <h3>Mains</h3>
+  <fieldset>
+    <input type="checkbox" name="beef" #beef checked (click)="onMainChanged()"><label>beef</label>
+    <input type="checkbox" name="chicken" #chicken checked (click)="onMainChanged()"><label>chicken</label>
+    <input type="checkbox" name="pork" #pork checked (click)="onMainChanged()"><label>pork</label>
+    <input type="checkbox" name="fish" #fish checked (click)="onMainChanged()"><label>fish</label>
+    <input type="checkbox" name="other" #other checked (click)="onMainChanged()"><label>other</label>
+  </fieldset>
+  <h3>Starches</h3>
+  <fieldset>
+    <input type="checkbox" name="potato" #potato checked (click)="onStarchChanged()"><label>potato</label>
+    <input type="checkbox" name="pantry" #pantry checked (click)="onStarchChanged()"><label>pantry</label>
+    <input type="checkbox" name="bread" #bread checked (click)="onStarchChanged()"><label>bread</label>
+  </fieldset>
+</form>
